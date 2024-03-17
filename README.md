@@ -1,24 +1,20 @@
-## House Prices - Advanced Regression Techniques
-Predict sales prices and practice feature engineering, RFs, and gradient boosting
+<img src='https://wagon-public-datasets.s3.amazonaws.com/data-science-images/ML/kaggle-batch-challenge.png' width=600>
 
-### Competition Description
-Ask a home buyer to describe their dream house, and they probably won't begin with the height of the basement ceiling or the proximity to an east-west railroad. But this playground competition's dataset proves that much more influences price negotiations than the number of bedrooms or a white-picket fence.
+Welcome to your first Kaggle Competition!
 
-With 79 explanatory variables describing (almost) every aspect of residential homes in Ames, Iowa, this competition challenges you to predict the final price of each home.
+Your objective is to **submit online an answer** to the open competition 🔥
 
-### Practice Skills
-- Creative feature engineering
-- Advanced regression techniques like random forest and gradient boosting
+Your whole class will compete as a group against the team of TAs!
 
-### Acknowledgments
-The Ames Housing dataset was compiled by Dean De Cock for use in data science education. It's an incredible alternative for data scientists looking for a modernized and expanded version of the often cited Boston Housing dataset. 
+Download the datasets in the `data` folder and upgrade `sklearn` to its latest version
 
-## Evaluation
-### Goal
-It is your job to predict the sales price for each house. For each Id in the test set, you must predict the value of the SalePrice variable. 
+```bash
+cd ~/code/<user.github_nickname>/{{local_path_to("05-ML/07-Ensemble-Methods/01-Houses-Kaggle-Competition")}}
+curl https://wagon-public-datasets.s3.amazonaws.com/houses_train_raw.csv > data/train.csv
+curl https://wagon-public-datasets.s3.amazonaws.com/houses_test_raw.csv > data/test.csv
+curl https://wagon-public-datasets.s3.amazonaws.com/houses_sample_submission.csv > data/sample_submission.csv
+pip install --upgrade pip
+pip install --upgrade scikit-learn
+```
 
-### Metric
-Submissions are evaluated on Root-Mean-Squared-Error (RMSE) between the logarithm of the predicted value and the logarithm of the observed sales price. (Taking logs means that errors in predicting expensive houses and cheap houses will affect the result equally.)
-
-### Submission File Format
-The file should contain a header and have the following format:
+Open `houses_kaggle_competition.ipynb` and follow instruction
